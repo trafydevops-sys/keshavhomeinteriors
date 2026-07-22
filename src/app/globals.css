@@ -1,26 +1,76 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-canvas: #f7f4ee;
+  --color-canvas-deep: #efe8db;
+  --color-cream: #fbf9f5;
+  --color-ink: #1a1613;
+  --color-ink-soft: #554d43;
+  --color-walnut: #6b4a33;
+  --color-walnut-deep: #2b1d14;
+  --color-brass: #ab8a57;
+  --color-brass-soft: #d8c6a1;
+  --color-line: rgba(26, 22, 19, 0.12);
+  --color-line-dark: rgba(251, 249, 245, 0.14);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-canvas: var(--color-canvas);
+  --color-canvas-deep: var(--color-canvas-deep);
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+  --color-ink-soft: var(--color-ink-soft);
+  --color-walnut: var(--color-walnut);
+  --color-walnut-deep: var(--color-walnut-deep);
+  --color-brass: var(--color-brass);
+  --color-brass-soft: var(--color-brass-soft);
+  --color-line: var(--color-line);
+  --color-line-dark: var(--color-line-dark);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--color-canvas);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-walnut-deep);
+  color: var(--color-cream);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Hairline dividers used throughout instead of heavy borders */
+.hairline {
+  border-color: var(--color-line);
+}
+
+/* Reserve scrollbar gutter so pinned sections don't jump */
+html {
+  scrollbar-gutter: stable;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .cursor-none-desktop,
+  .cursor-none-desktop * {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
