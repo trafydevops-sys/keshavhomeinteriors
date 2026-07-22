@@ -170,6 +170,7 @@ export default function PortfolioGallery() {
                 width={active.width}
                 height={active.height}
                 sizes="90vw"
+                priority
                 className="h-auto max-h-[75vh] w-auto max-w-full rounded-sm object-contain"
               />
               <p className="mt-4 text-center text-sm tracking-wide text-cream/70">
