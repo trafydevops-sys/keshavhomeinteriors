@@ -23,26 +23,26 @@ export default function CustomCursor() {
     let targetY = ringY;
     let raf = 0;
 
-    function onMove(e: PointerEvent) {
+    const onMove = (e: PointerEvent) => {
       targetX = e.clientX;
       targetY = e.clientY;
       dot.style.transform = `translate3d(${targetX}px, ${targetY}px, 0)`;
-    }
+    };
 
-    function onOver(e: PointerEvent) {
+    const onOver = (e: PointerEvent) => {
       const target = e.target as HTMLElement;
       const interactive = target.closest("a, button, [data-cursor-hover]");
       const hide = target.closest("[data-cursor-hide]");
       ringInner.style.transform = `scale(${interactive ? 1.8 : 1})`;
       ring.style.opacity = hide ? "0" : "1";
-    }
+    };
 
-    function tick() {
+    const tick = () => {
       ringX += (targetX - ringX) * 0.16;
       ringY += (targetY - ringY) * 0.16;
       ring.style.transform = `translate3d(${ringX}px, ${ringY}px, 0)`;
       raf = requestAnimationFrame(tick);
-    }
+    };
 
     document.body.classList.add("cursor-none-desktop");
     window.addEventListener("pointermove", onMove);
