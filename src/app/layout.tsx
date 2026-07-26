@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Michroma, Inter } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/providers/SmoothScroll";
-import CustomCursor from "@/components/ui/CustomCursor";
+import GrainOverlay from "@/components/ui/GrainOverlay";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { site } from "@/lib/site";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const michroma = Michroma({
+  variable: "--font-michroma",
   subsets: ["latin"],
-  style: ["normal", "italic"],
+  weight: "400",
 });
 
 const inter = Inter({
@@ -52,11 +52,11 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${fraunces.variable} ${inter.variable} h-full antialiased`}
+      className={`${michroma.variable} ${inter.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-canvas text-ink">
         <SmoothScroll>
-          <CustomCursor />
+          <GrainOverlay />
           <Header />
           <main id="top" className="flex-1">
             {children}

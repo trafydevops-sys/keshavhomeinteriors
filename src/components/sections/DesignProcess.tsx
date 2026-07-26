@@ -41,7 +41,7 @@ export default function DesignProcess() {
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
           <RevealText text="A process built to remove" />{" "}
-          <RevealText text="the guesswork." delay={0.15} className="italic" />
+          <RevealText text="the guesswork." delay={0.15} className="text-brass" />
         </h2>
 
         <div className="relative mt-20 max-w-3xl md:mt-28">

@@ -38,12 +38,12 @@ export default function WhyChooseUs() {
               <RevealText text="Not the cheapest quote." />
               <br />
               <RevealText text="The one you don't" delay={0.15} />{" "}
-              <RevealText text="regret." delay={0.3} className="italic" />
+              <RevealText text="regret." delay={0.3} className="text-brass" />
             </h2>
             <RevealScale delay={0.2} className="relative mt-10 hidden aspect-[4/5] overflow-hidden md:block">
               <Image
                 src={highlights.foyer.src}
-                alt="Foyer wash area finished in wood slat screening, Anna Nagar residence"
+                alt="Foyer wash area finished in wood slat screening, Anna Nagar West"
                 fill
                 sizes="35vw"
                 className="object-cover"

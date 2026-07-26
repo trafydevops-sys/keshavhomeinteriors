@@ -42,3 +42,4 @@ next-env.d.ts
 
 # raw client photo source (unprocessed originals, not for deployment)
 /source-images
+/source-images-v2

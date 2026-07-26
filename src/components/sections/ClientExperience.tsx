@@ -3,7 +3,32 @@ import { Counter } from "@/components/ui/Counter";
 import { site } from "@/lib/site";
 import { projects } from "@/lib/projects";
 
-const LOCALITIES = Array.from(new Set(projects.map((p) => p.locality)));
+// Beyond the localities we've actually shot projects in, list the wider
+// Chennai service area — real neighbourhoods, not a claim of completed work.
+const AREAS_SERVED = [
+  "T Nagar",
+  "Adyar",
+  "Velachery",
+  "Porur",
+  "Mogappair",
+  "Perambur",
+  "Tambaram",
+  "Chromepet",
+  "Nolambur",
+  "Koyambedu",
+  "Vadapalani",
+  "Poonamallee",
+  "Avadi",
+  "Kolathur",
+  "Pallavaram",
+];
+
+const LOCALITIES = Array.from(
+  new Set([
+    ...projects.map((p) => p.locality.split(",")[0]),
+    ...AREAS_SERVED,
+  ])
+);
 
 export default function ClientExperience() {
   return (
@@ -14,7 +39,7 @@ export default function ClientExperience() {
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
           <RevealText text="Built on repeat referrals," />{" "}
-          <RevealText text="not ad spend." delay={0.15} className="italic" />
+          <RevealText text="not ad spend." delay={0.15} className="text-brass" />
         </h2>
 
         <div className="mt-16 grid gap-10 border-y hairline py-12 sm:grid-cols-3 md:mt-24">
@@ -49,7 +74,7 @@ export default function ClientExperience() {
 
       <Reveal delay={0.1} className="mt-16 md:mt-20">
         <div className="flex select-none overflow-hidden">
-          <div className="flex shrink-0 animate-[marquee_32s_linear_infinite] items-center gap-10 pr-10">
+          <div className="flex shrink-0 animate-[marquee_90s_linear_infinite] items-center gap-10 pr-10">
             {[...LOCALITIES, ...LOCALITIES].map((loc, i) => (
               <span
                 key={`${loc}-${i}`}

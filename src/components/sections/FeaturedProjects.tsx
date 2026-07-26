@@ -16,7 +16,7 @@ export default function FeaturedProjects() {
             </Reveal>
             <h2 className="mt-6 max-w-xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
               <RevealText text="Real homes, finished the" />{" "}
-              <RevealText text="way they were drawn." delay={0.15} className="italic" />
+              <RevealText text="way they were drawn." delay={0.15} className="text-brass" />
             </h2>
           </div>
           <Reveal delay={0.2}>

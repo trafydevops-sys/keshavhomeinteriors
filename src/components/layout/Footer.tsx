@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -6,7 +7,15 @@ export default function Footer() {
       <div className="mx-auto max-w-[1600px] px-6 pb-10 pt-20 md:px-10">
         <div className="grid gap-16 md:grid-cols-[1.4fr_1fr_1fr]">
           <div>
-            <p className="font-display text-3xl">Keshav Home Interiors</p>
+            <div className="relative h-20 w-[122px] max-w-full">
+              <Image
+                src="/brand/logo-stacked-light.png"
+                alt={site.name}
+                fill
+                sizes="122px"
+                className="object-contain object-left"
+              />
+            </div>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-cream/60">
               {site.tagline}. Designed and built in {site.city}, one home at a
               time.
@@ -16,7 +25,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               data-cursor-hover
-              className="mt-8 inline-block rounded-full border border-cream/25 px-6 py-3 text-sm tracking-wide transition-colors hover:border-cream hover:bg-cream hover:text-ink"
+              className="mt-8 inline-block rounded-full border border-cream/25 px-6 py-3 text-sm font-medium tracking-wide transition-colors hover:border-cream hover:bg-cream hover:text-ink"
             >
               Book a Free Consultation
             </a>

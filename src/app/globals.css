@@ -12,6 +12,7 @@
   --color-brass-soft: #d8c6a1;
   --color-line: rgba(26, 22, 19, 0.12);
   --color-line-dark: rgba(251, 249, 245, 0.14);
+  --color-brand-slate: #43545a;
 }
 
 @theme inline {
@@ -26,7 +27,8 @@
   --color-brass-soft: var(--color-brass-soft);
   --color-line: var(--color-line);
   --color-line-dark: var(--color-line-dark);
-  --font-display: var(--font-fraunces);
+  --color-brand-slate: var(--color-brand-slate);
+  --font-display: var(--font-michroma);
   --font-sans: var(--font-inter);
 }
 
@@ -57,13 +59,6 @@ body {
 /* Reserve scrollbar gutter so pinned sections don't jump */
 html {
   scrollbar-gutter: stable;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .cursor-none-desktop,
-  .cursor-none-desktop * {
-    cursor: none;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {

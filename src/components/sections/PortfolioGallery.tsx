@@ -7,24 +7,37 @@ import { Reveal, RevealText } from "@/components/ui/Reveal";
 import { projects, type ProjectImage } from "@/lib/projects";
 
 const CATEGORY_BY_SLUG: Record<string, string> = {
-  "anna-nagar": "Kitchen",
-  vasumathi: "Kitchen",
-  prestige: "Kitchen",
-  appaswamy: "Bedroom & Wardrobe",
-  brigade: "Bedroom & Wardrobe",
-  manivakkam: "Living & TV Unit",
+  "anna-nagar-west": "Kitchen",
+  "anna-nagar-west-extension": "Kitchen",
+  "prestige-windsor-park": "Kitchen",
+  "vivekananda-nagar": "Kitchen",
+  ambattur: "Kitchen",
+  "appaswamy-park-house-mews": "Bedroom & Wardrobe",
+  mannivakkam: "Living & Pooja Units",
+  "panneerselvam-street": "Living & Pooja Units",
   thirumullaivoyal: "Utility",
-  preethi: "Utility",
-  kallikuppam: "Craft Details",
+  "vaarppu-boutique": "Commercial",
+};
+
+// Mannivakkam's folder mixes a TV/pooja wall with plain kitchen shots — the
+// project-level category above is right for most of it, but these specific
+// frames are kitchen photos and shouldn't surface under Living & Pooja Units.
+const CATEGORY_OVERRIDE_BY_FILE: Record<string, string> = {
+  "mannivakkam/20260504_171851.jpg": "Kitchen",
+  "mannivakkam/20260504_171901.jpg": "Kitchen",
+  "mannivakkam/20260504_171905.jpg": "Kitchen",
+  "mannivakkam/20260504_171908.jpg": "Kitchen",
+  "mannivakkam/20260504_171924.jpg": "Kitchen",
+  "mannivakkam/20260504_171928.jpg": "Kitchen",
 };
 
 const FILTERS = [
   "All",
   "Kitchen",
   "Bedroom & Wardrobe",
-  "Living & TV Unit",
+  "Living & Pooja Units",
   "Utility",
-  "Craft Details",
+  "Commercial",
 ];
 
 type GalleryItem = ProjectImage & {
@@ -34,12 +47,18 @@ type GalleryItem = ProjectImage & {
 };
 
 const ALL_ITEMS: GalleryItem[] = projects.flatMap((project) =>
-  project.gallery.map((image, i) => ({
-    ...image,
-    key: `${project.slug}-${i}`,
-    projectTitle: project.title,
-    category: CATEGORY_BY_SLUG[project.slug] ?? "Craft Details",
-  }))
+  project.gallery.map((image, i) => {
+    const file = `${project.slug}/${image.src.split("/").pop()}`;
+    return {
+      ...image,
+      key: `${project.slug}-${i}`,
+      projectTitle: project.title,
+      category:
+        CATEGORY_OVERRIDE_BY_FILE[file] ??
+        CATEGORY_BY_SLUG[project.slug] ??
+        "Kitchen",
+    };
+  })
 );
 
 export default function PortfolioGallery() {
@@ -64,7 +83,7 @@ export default function PortfolioGallery() {
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
           <RevealText text="Every room we've" />{" "}
-          <RevealText text="actually built." delay={0.15} className="italic" />
+          <RevealText text="actually built." delay={0.15} className="text-brass" />
         </h2>
 
         <Reveal delay={0.15}>
@@ -74,7 +93,7 @@ export default function PortfolioGallery() {
                 key={f}
                 data-cursor-hover
                 onClick={() => setFilter(f)}
-                className={`rounded-full border px-5 py-2 text-sm tracking-wide transition-colors ${
+                className={`rounded-full border px-5 py-2 text-sm font-medium tracking-wide transition-colors ${
                   filter === f
                     ? "border-ink bg-ink text-cream"
                     : "border-ink/20 text-ink-soft hover:border-ink/50"

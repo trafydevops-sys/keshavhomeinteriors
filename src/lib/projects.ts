@@ -34,98 +34,109 @@ function gallery(slug: string): ProjectImage[] {
   }));
 }
 
-// Curated, factual descriptions written from what the photographs actually
-// show — no invented client names, quotes, or specifics beyond what's visible.
+// Project name and locality are taken directly from how the client's own
+// photo folders were named — nothing here is invented. Descriptions are
+// written from what's actually visible in the photographs.
 export const projects: Project[] = [
   {
-    slug: "anna-nagar",
-    title: "Anna Nagar Residence",
-    locality: "Anna Nagar, Chennai",
-    summary:
-      "A champagne-lacquer modular kitchen built around a waterfall island, with a fluted-oak partition screening the entry and a hidden pooja niche carved into the run of cabinetry.",
-    tags: ["Modular Kitchen", "Foyer"],
-    cover: img("anna-nagar", "img_20240831_111804.jpg"),
-    gallery: gallery("anna-nagar"),
-  },
-  {
-    slug: "vasumathi",
-    title: "Vasumathi Residence",
-    locality: "Chennai",
+    slug: "anna-nagar-west-extension",
+    title: "Anna Nagar West Extension, Chennai",
+    locality: "Anna Nagar West Extension, Chennai",
     summary:
       "A kitchen built for entertaining — teal lacquer cabinetry, a hand-thrown wooden vessel sink, and a pair of caged pendant lights suspended over patterned cement-tile flooring.",
     tags: ["Modular Kitchen", "Lighting"],
-    cover: img("vasumathi", "20260114_105903.jpg"),
-    gallery: gallery("vasumathi"),
+    cover: img("anna-nagar-west-extension", "20260114_105903.jpg"),
+    gallery: gallery("anna-nagar-west-extension"),
   },
   {
-    slug: "appaswamy",
-    title: "Appaswamy Residence",
-    locality: "Chennai",
+    slug: "appaswamy-park-house-mews",
+    title: "Appaswamy, Park House Mews, Guindy",
+    locality: "Guindy, Chennai",
     summary:
-      "A master bedroom finished in charcoal laminate — a floating platform bed, a full-height wardrobe in high-gloss black glass, and a warm cove of concealed lighting along the headboard wall.",
-    tags: ["Bedroom", "Wardrobe"],
-    cover: img("appaswamy", "img-20251217-wa0124.jpg"),
-    gallery: gallery("appaswamy"),
+      "A bedroom finished in warm oak veneer — a full-height sliding wardrobe in high-gloss black glass, a floating study nook and a wall-mounted vanity, all built around a matching pair of caged pendant lights.",
+    tags: ["Bedroom", "Wardrobe", "Bathroom"],
+    cover: img("appaswamy-park-house-mews", "img-20251217-wa0106.jpg"),
+    gallery: gallery("appaswamy-park-house-mews"),
   },
   {
-    slug: "manivakkam",
-    title: "Manivakkam Residence",
-    locality: "Manivakkam, Chennai",
+    slug: "mannivakkam",
+    title: "Mannivakkam, Chennai",
+    locality: "Mannivakkam, Chennai",
     summary:
-      "A living room TV wall in book-matched wood veneer and marble-finish cladding, paired with a hand-detailed pooja unit — brass-inlay shutters over a laser-cut jaali screen.",
-    tags: ["TV Unit", "Living Room", "Pooja Unit"],
-    cover: img("manivakkam", "20260504_170608.jpg"),
-    gallery: gallery("manivakkam"),
+      "A living room built around the staircase — a marble-clad TV wall, a floating console under caged pendant lighting, and a hand-detailed pooja unit with a brass-inlay laser-cut jaali screen.",
+    tags: ["Living Room", "TV Unit", "Pooja Unit"],
+    cover: img("mannivakkam", "20260504_170834.jpg"),
+    gallery: gallery("mannivakkam"),
   },
   {
-    slug: "prestige",
-    title: "Prestige Residence",
-    locality: "Chennai",
+    slug: "vaarppu-boutique",
+    title: "Vaarppu Boutique, Ambattur",
+    locality: "Ambattur, Chennai",
     summary:
-      "A kitchen finished in warm walnut cabinetry with a honed black-granite counter and full utility sink, paired with a glossy walnut wardrobe fitted with clean white-lined drawers.",
-    tags: ["Modular Kitchen", "Wardrobe"],
-    cover: img("prestige", "20260508_191747.jpg"),
-    gallery: gallery("prestige"),
+      "A retail fit-out for a textile boutique — full-height display shelving in warm veneer, backlit and organised by colour, built around the brand's own signage wall.",
+    tags: ["Commercial", "Retail"],
+    cover: img("vaarppu-boutique", "20251219_182629.jpg"),
+    gallery: gallery("vaarppu-boutique"),
   },
   {
-    slug: "brigade",
-    title: "Brigade Residence",
-    locality: "Chennai",
+    slug: "vivekananda-nagar",
+    title: "Vivekananda Nagar, Ambattur",
+    locality: "Ambattur, Chennai",
     summary:
-      "A dresser and vanity unit in walnut laminate, built around an arched mirror inset — one of the quieter, more sculptural details from this bedroom fit-out.",
-    tags: ["Bedroom", "Vanity"],
-    cover: img("brigade", "20260523_125201.jpg"),
-    gallery: gallery("brigade"),
+      "A full home fit-out — a teal-lacquer kitchen with patterned tile accents, a wall-mounted bathroom vanity with an oval LED mirror, and a bedroom wardrobe in bright teal and white.",
+    tags: ["Modular Kitchen", "Bathroom", "Bedroom"],
+    cover: img("vivekananda-nagar", "20260101_184106.jpg"),
+    gallery: gallery("vivekananda-nagar"),
+  },
+  {
+    slug: "anna-nagar-west",
+    title: "Anna Nagar West, Chennai",
+    locality: "Anna Nagar West, Chennai",
+    summary:
+      "A champagne-lacquer modular kitchen built around a waterfall island, with a fluted-oak partition screening the entry and a hidden pooja niche carved into the run of cabinetry.",
+    tags: ["Modular Kitchen", "Foyer"],
+    cover: img("anna-nagar-west", "img_20240831_111804.jpg"),
+    gallery: gallery("anna-nagar-west"),
+  },
+  {
+    slug: "panneerselvam-street",
+    title: "PanneerSelvam Street, Ambattur",
+    locality: "Ambattur, Chennai",
+    summary:
+      "A formal pooja unit in dark wood with a laser-cut peacock-feather motif, lit from within, standing beside a dressing table framed by an arched mirror.",
+    tags: ["Pooja Unit", "Vanity"],
+    cover: img("panneerselvam-street", "20260317_185727.jpg"),
+    gallery: gallery("panneerselvam-street"),
+  },
+  {
+    slug: "prestige-windsor-park",
+    title: "Prestige Windsor Park, Vanagaram, Chennai",
+    locality: "Vanagaram, Chennai",
+    summary:
+      "A kitchen finished in warm walnut cabinetry with a honed black-granite counter and a full utility sink, built for a compact footprint without feeling cramped.",
+    tags: ["Modular Kitchen"],
+    cover: img("prestige-windsor-park", "20260508_191751.jpg"),
+    gallery: gallery("prestige-windsor-park"),
   },
   {
     slug: "thirumullaivoyal",
-    title: "Thirumullaivoyal Residence",
+    title: "Thirumullaivoyal, Chennai",
     locality: "Thirumullaivoyal, Chennai",
     summary:
-      "A compact utility yard finished in two-tone navy and warm-oak cabinetry, lit through a glass-block skylight and opening onto a tiled wash area.",
-    tags: ["Utility"],
-    cover: img("thirumullaivoyal", "20260417_155255.jpg"),
+      "A utility yard finished in two-tone navy and warm-oak cabinetry under a glass-block skylight, paired with a marble-laminate pooja cabinet detailed in a laser-cut motif.",
+    tags: ["Utility", "Pooja Unit"],
+    cover: img("thirumullaivoyal", "20260417_155130.jpg"),
     gallery: gallery("thirumullaivoyal"),
   },
   {
-    slug: "kallikuppam",
-    title: "Kallikuppam Residence",
-    locality: "Kallikuppam, Chennai",
+    slug: "ambattur",
+    title: "Ambattur, Chennai",
+    locality: "Ambattur, Chennai",
     summary:
-      "A storage wall detailed with a laser-cut peacock-feather motif in walnut, backlit to read as a piece of craft rather than a cabinet.",
-    tags: ["Luxury Details", "Storage"],
-    cover: img("kallikuppam", "20260515_162306.jpg"),
-    gallery: gallery("kallikuppam"),
-  },
-  {
-    slug: "preethi",
-    title: "Preethi Residence",
-    locality: "Chennai",
-    summary:
-      "A compact wet-area and utility fit-out in navy-lacquer cabinetry with a granite counter, built to keep a small footprint feeling fully finished.",
-    tags: ["Utility", "Wet Area"],
-    cover: img("preethi", "20260224_120702.jpg"),
-    gallery: gallery("preethi"),
+      "A modular kitchen in slate-blue lacquer with a black granite counter and a patterned tile backsplash, finished alongside a compact utility wash area.",
+    tags: ["Modular Kitchen", "Utility"],
+    cover: img("ambattur", "20260224_120647.jpg"),
+    gallery: gallery("ambattur"),
   },
 ];
 
@@ -135,18 +146,27 @@ export function getProject(slug: string) {
 
 // Hand-picked images for homepage sections that need one strong photo per
 // theme, rather than a whole project gallery.
+export const heroRotation = [
+  img("anna-nagar-west-extension", "20260114_105903.jpg"),
+  img("appaswamy-park-house-mews", "img-20251217-wa0106.jpg"),
+  img("mannivakkam", "20260504_170834.jpg"),
+  img("vivekananda-nagar", "20260101_184106.jpg"),
+  img("panneerselvam-street", "20260317_185727.jpg"),
+];
+
 export const highlights = {
-  heroPrimary: img("appaswamy", "img-20251217-wa0124.jpg"),
-  heroSecondary: img("vasumathi", "20260114_105903.jpg"),
-  kitchen: img("anna-nagar", "img_20240831_111804.jpg"),
-  kitchenAlt: img("vasumathi", "20251228_012105.jpg"),
-  bedroom: img("appaswamy", "img-20251217-wa0124.jpg"),
-  wardrobe: img("appaswamy", "img-20251217-wa0120.jpg"),
-  tvUnit: img("manivakkam", "20260504_170608.jpg"),
-  lighting: img("vasumathi", "20260114_105742.jpg"),
-  craftsmanship: img("manivakkam", "20260504_170904.jpg"),
-  craftsmanshipAlt: img("kallikuppam", "20260515_162306.jpg"),
-  utility: img("preethi", "20260224_120702.jpg"),
-  foyer: img("anna-nagar", "img_20240831_111725.jpg"),
-  storyMain: img("anna-nagar", "img_20240831_111711.jpg"),
+  heroPrimary: heroRotation[0],
+  kitchen: img("anna-nagar-west", "img_20240831_111804.jpg"),
+  kitchenAlt: img("anna-nagar-west-extension", "20251228_011841.jpg"),
+  bedroom: img("appaswamy-park-house-mews", "img-20251217-wa0106.jpg"),
+  wardrobe: img("vivekananda-nagar", "20260101_184557.jpg"),
+  tvUnit: img("mannivakkam", "20260504_170621.jpg"),
+  lighting: img("anna-nagar-west-extension", "20260114_105808.jpg"),
+  craftsmanship: img("mannivakkam", "20260504_170834.jpg"),
+  craftsmanshipAlt: img("panneerselvam-street", "20260317_185727.jpg"),
+  utility: img("thirumullaivoyal", "20260417_155130.jpg"),
+  foyer: img("anna-nagar-west", "img_20240831_111725.jpg"),
+  storyMain: img("anna-nagar-west", "img_20240831_111711.jpg"),
+  bathroom: img("vivekananda-nagar", "20260101_183344.jpg"),
+  boutique: img("vaarppu-boutique", "20251219_182629.jpg"),
 };

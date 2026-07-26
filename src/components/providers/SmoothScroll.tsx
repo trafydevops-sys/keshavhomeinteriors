@@ -4,6 +4,7 @@ import { useEffect, type ReactNode } from "react";
 import Lenis from "lenis";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { setLenis } from "@/lib/lenis";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -21,6 +22,7 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     });
 
     lenis.on("scroll", ScrollTrigger.update);
+    setLenis(lenis);
 
     function raf(time: number) {
       // gsap.ticker reports elapsed time in seconds; Lenis expects ms
@@ -29,8 +31,26 @@ export default function SmoothScroll({ children }: { children: ReactNode }) {
     gsap.ticker.add(raf);
     gsap.ticker.lagSmoothing(0);
 
+    // Native `#anchor` links jump the scrollbar directly, which Lenis then
+    // fights and snaps back on the next frame. Route every in-page hash
+    // link through Lenis instead so header/footer nav actually scrolls.
+    function onClick(e: MouseEvent) {
+      const anchor = (e.target as HTMLElement).closest("a[href^='#']");
+      if (!anchor) return;
+      const hash = anchor.getAttribute("href");
+      if (!hash || hash === "#") return;
+      const target = document.querySelector(hash);
+      if (!target) return;
+      e.preventDefault();
+      lenis.scrollTo(target as HTMLElement);
+      history.pushState(null, "", hash);
+    }
+    document.addEventListener("click", onClick);
+
     return () => {
+      document.removeEventListener("click", onClick);
       gsap.ticker.remove(raf);
+      setLenis(null);
       lenis.destroy();
     };
   }, []);

@@ -18,7 +18,7 @@ export default function Contact() {
             <h2 className="mt-6 font-display text-4xl leading-[1.15] md:text-6xl">
               <RevealText text="Tell us about" />
               <br />
-              <RevealText text="the home you want." delay={0.15} className="italic text-brass-soft" />
+              <RevealText text="the home you want." delay={0.15} className="text-brass-soft" />
             </h2>
             <Reveal delay={0.25}>
               <p className="mt-8 max-w-md text-sm leading-relaxed text-cream/60">
@@ -35,14 +35,14 @@ export default function Contact() {
                   target="_blank"
                   rel="noopener noreferrer"
                   data-cursor-hover
-                  className="rounded-full bg-cream px-7 py-3.5 text-sm tracking-wide text-ink transition-transform hover:scale-[1.03]"
+                  className="rounded-full bg-cream px-7 py-3.5 text-sm font-medium tracking-wide text-ink transition-transform hover:scale-[1.03]"
                 >
                   Message on WhatsApp
                 </a>
                 <a
                   href={site.phoneHref}
                   data-cursor-hover
-                  className="rounded-full border border-cream/30 px-7 py-3.5 text-sm tracking-wide text-cream hover:border-cream"
+                  className="rounded-full border border-cream/30 px-7 py-3.5 text-sm font-medium tracking-wide text-cream hover:border-cream"
                 >
                   {site.phone}
                 </a>

@@ -1,6 +1,18 @@
 import Image from "next/image";
 import { Reveal, RevealScale, RevealText } from "@/components/ui/Reveal";
+import HorizontalScrollGallery, {
+  type FilmstripItem,
+} from "@/components/ui/HorizontalScrollGallery";
 import { highlights } from "@/lib/projects";
+
+const FILMSTRIP: FilmstripItem[] = [
+  { ...highlights.craftsmanshipAlt, caption: "Backlit peacock-feather jaali, PanneerSelvam Street" },
+  { ...highlights.lighting, caption: "Caged pendant lighting, Anna Nagar West Extension" },
+  { ...highlights.foyer, caption: "Fluted-oak entry screen, Anna Nagar West" },
+  { ...highlights.bathroom, caption: "Wall-mounted vanity in warm oak, Vivekananda Nagar" },
+  { ...highlights.boutique, caption: "Backlit display shelving, Vaarppu Boutique" },
+  { ...highlights.wardrobe, caption: "Bedroom wardrobe detail, Vivekananda Nagar" },
+];
 
 const DETAILS = [
   {
@@ -30,7 +42,7 @@ export default function Materials() {
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] md:text-5xl">
           <RevealText text="The details you feel" />{" "}
-          <RevealText text="before you notice them." delay={0.15} className="italic text-brass-soft" />
+          <RevealText text="before you notice them." delay={0.15} className="text-brass-soft" />
         </h2>
 
         <div className="mt-16 grid gap-6 md:mt-24 md:grid-cols-12">
@@ -58,26 +70,13 @@ export default function Materials() {
           </div>
         </div>
 
-        <div className="mt-6 grid gap-6 md:grid-cols-2">
-          <RevealScale className="relative aspect-[16/10] overflow-hidden">
-            <Image
-              src={highlights.craftsmanshipAlt.src}
-              alt="Laser-cut peacock-feather motif storage wall, backlit walnut finish"
-              fill
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
-            />
-          </RevealScale>
-          <RevealScale delay={0.1} className="relative aspect-[16/10] overflow-hidden">
-            <Image
-              src={highlights.lighting.src}
-              alt="Caged pendant lighting fixture detail over a kitchen island"
-              fill
-              sizes="(min-width: 768px) 50vw, 100vw"
-              className="object-cover"
-            />
-          </RevealScale>
-        </div>
+      </div>
+
+      <p className="mx-auto mt-20 max-w-[1600px] px-6 text-xs tracking-[0.25em] text-cream/40 md:px-10">
+        SCROLL — MORE DETAILS FROM SITE
+      </p>
+      <div className="mt-6">
+        <HorizontalScrollGallery items={FILMSTRIP} />
       </div>
     </section>
   );

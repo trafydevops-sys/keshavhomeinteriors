@@ -35,7 +35,7 @@ export default function Services() {
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
           <RevealText text="One studio, every room," />{" "}
-          <RevealText text="under one roof." delay={0.15} className="italic" />
+          <RevealText text="under one roof." delay={0.15} className="text-brass" />
         </h2>
 
         <div className="mt-16 grid gap-5 md:mt-24 md:grid-cols-2">

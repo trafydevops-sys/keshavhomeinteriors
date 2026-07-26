@@ -1,5 +1,99 @@
 {
-  "anna-nagar": [
+  "ambattur": [
+    {
+      "file": "20260224_120647.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260224_120656.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260224_120702.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260224_120706.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260224_120712.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260224_120717.jpg",
+      "width": 2400,
+      "height": 3200
+    }
+  ],
+  "anna-nagar-west-extension": [
+    {
+      "file": "20251228_011724.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20251228_011727.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20251228_011832.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20251228_011841.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20251228_011851.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20260114_105622.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20260114_105626.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20260114_105629.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20260114_105633.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20260114_105653.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260114_105808.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260114_105903.jpg",
+      "width": 2400,
+      "height": 3200
+    }
+  ],
+  "anna-nagar-west": [
     {
       "file": "img_20240831_111703.jpg",
       "width": 1800,
@@ -46,160 +140,56 @@
       "height": 1800
     }
   ],
-  "appaswamy": [
+  "appaswamy-park-house-mews": [
     {
-      "file": "img-20251217-wa0089.jpg",
+      "file": "img-20251217-wa0090.jpg",
+      "width": 908,
+      "height": 1211
+    },
+    {
+      "file": "img-20251217-wa0091.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "file": "img-20251217-wa0098.jpg",
+      "width": 1280,
+      "height": 960
+    },
+    {
+      "file": "img-20251217-wa0104.jpg",
       "width": 960,
       "height": 1280
     },
     {
-      "file": "img-20251217-wa0119.jpg",
-      "width": 1600,
-      "height": 1200
-    },
-    {
-      "file": "img-20251217-wa0120.jpg",
-      "width": 1200,
-      "height": 1600
-    },
-    {
-      "file": "img-20251217-wa0121.jpg",
-      "width": 960,
-      "height": 1280
-    },
-    {
-      "file": "img-20251217-wa0122.jpg",
-      "width": 960,
-      "height": 1280
-    },
-    {
-      "file": "img-20251217-wa0123.jpg",
-      "width": 1164,
-      "height": 873
-    },
-    {
-      "file": "img-20251217-wa0124.jpg",
+      "file": "img-20251217-wa0106.jpg",
       "width": 960,
       "height": 1280
     }
   ],
-  "brigade": [
-    {
-      "file": "20260523_125201.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260523_125205.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260523_125210.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260523_125227.jpg",
-      "width": 2400,
-      "height": 1800
-    },
-    {
-      "file": "20260523_125231.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260523_125448.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260523_130201.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "img-20260502-wa0103.jpg",
-      "width": 1200,
-      "height": 1600
-    },
-    {
-      "file": "img-20260502-wa0105.jpg",
-      "width": 1200,
-      "height": 1600
-    },
-    {
-      "file": "img-20260502-wa0108.jpg",
-      "width": 1200,
-      "height": 1600
-    }
-  ],
-  "kallikuppam": [
-    {
-      "file": "20260515_162139.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260515_162157.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260515_162306.jpg",
-      "width": 2400,
-      "height": 3200
-    }
-  ],
-  "manivakkam": [
-    {
-      "file": "20260504_170459.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_170533.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_170542.jpg",
-      "width": 2400,
-      "height": 3200
-    },
+  "mannivakkam": [
     {
       "file": "20260504_170545.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260504_170608.jpg",
+      "file": "20260504_170621.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260504_170710.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_170722.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_170736.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_170904.jpg",
+      "file": "20260504_170834.jpg",
       "width": 2400,
       "height": 3200
     },
     {
       "file": "20260504_171851.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260504_171901.jpg",
       "width": 2400,
       "height": 3200
     },
@@ -214,16 +204,6 @@
       "height": 3200
     },
     {
-      "file": "20260504_171911.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260504_171918.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
       "file": "20260504_171924.jpg",
       "width": 2400,
       "height": 3200
@@ -234,41 +214,31 @@
       "height": 3200
     }
   ],
-  "preethi": [
+  "panneerselvam-street": [
     {
-      "file": "20260222_215951.jpg",
+      "file": "20260317_185722.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260222_215956.jpg",
+      "file": "20260317_185727.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260224_120702.jpg",
+      "file": "20260317_185748.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260224_120706.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260224_120712.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260224_120721.jpg",
+      "file": "20260317_185802.jpg",
       "width": 2400,
       "height": 3200
     }
   ],
-  "prestige": [
+  "prestige-windsor-park": [
     {
-      "file": "20260508_191747.jpg",
+      "file": "20260508_191751.jpg",
       "width": 2400,
       "height": 3200
     },
@@ -278,101 +248,98 @@
       "height": 3200
     },
     {
-      "file": "20260508_191937.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
       "file": "20260508_191954.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260508_192345.jpg",
-      "width": 2400,
-      "height": 3200
-    },
-    {
-      "file": "20260508_192417.jpg",
       "width": 2400,
       "height": 3200
     }
   ],
   "thirumullaivoyal": [
     {
-      "file": "20260417_155138.jpg",
+      "file": "20260417_155130.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260417_155148.jpg",
+      "file": "20260417_155143.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260417_155158.jpg",
+      "file": "20260417_155154.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260417_155255.jpg",
-      "width": 2400,
-      "height": 3200
+      "file": "img-20220331-wa0092.jpg",
+      "width": 576,
+      "height": 1280
     }
   ],
-  "vasumathi": [
+  "vaarppu-boutique": [
     {
-      "file": "20251228_011832.jpg",
+      "file": "20251219_182504.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20251228_011841.jpg",
+      "file": "20251219_182510.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20251219_182550.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20251219_182606.jpg",
+      "width": 2400,
+      "height": 1800
+    },
+    {
+      "file": "20251219_182629.jpg",
+      "width": 2400,
+      "height": 1800
+    }
+  ],
+  "vivekananda-nagar": [
+    {
+      "file": "20260101_183344.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20251228_012105.jpg",
+      "file": "20260101_184059.jpg",
       "width": 2400,
       "height": 1800
     },
     {
-      "file": "20251228_012110.jpg",
+      "file": "20260101_184106.jpg",
       "width": 2400,
       "height": 1800
     },
     {
-      "file": "20260114_105622.jpg",
-      "width": 2400,
-      "height": 1800
-    },
-    {
-      "file": "20260114_105626.jpg",
-      "width": 2400,
-      "height": 1800
-    },
-    {
-      "file": "20260114_105629.jpg",
-      "width": 2400,
-      "height": 1800
-    },
-    {
-      "file": "20260114_105633.jpg",
-      "width": 2400,
-      "height": 1800
-    },
-    {
-      "file": "20260114_105703.jpg",
+      "file": "20260101_184114.jpg",
       "width": 2400,
       "height": 3200
     },
     {
-      "file": "20260114_105742.jpg",
+      "file": "20260101_184557.jpg",
       "width": 2400,
       "height": 1800
     },
     {
-      "file": "20260114_105903.jpg",
+      "file": "20260101_184604.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260101_184609.jpg",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "file": "20260101_184743.jpg",
       "width": 2400,
       "height": 3200
     }
