@@ -13,7 +13,7 @@ export default function Contact() {
         <div className="grid gap-16 md:grid-cols-2 md:gap-24">
           <div>
             <Reveal>
-              <p className="text-xs tracking-[0.25em] text-cream/50">09 — LET&apos;S BEGIN</p>
+              <p className="text-xs tracking-[0.25em] text-cream/50">10 — LET&apos;S BEGIN</p>
             </Reveal>
             <h2 className="mt-6 font-display text-4xl leading-[1.15] md:text-6xl">
               <RevealText text="Tell us about" />

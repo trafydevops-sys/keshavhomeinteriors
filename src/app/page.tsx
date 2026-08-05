@@ -5,6 +5,7 @@ import Services from "@/components/sections/Services";
 import DesignProcess from "@/components/sections/DesignProcess";
 import Materials from "@/components/sections/Materials";
 import ClientExperience from "@/components/sections/ClientExperience";
+import GoogleReviews from "@/components/sections/GoogleReviews";
 import PortfolioGallery from "@/components/sections/PortfolioGallery";
 import WhyChooseUs from "@/components/sections/WhyChooseUs";
 import Contact from "@/components/sections/Contact";
@@ -19,6 +20,7 @@ export default function Home() {
       <DesignProcess />
       <Materials />
       <ClientExperience />
+      <GoogleReviews />
       <PortfolioGallery />
       <WhyChooseUs />
       <Contact />

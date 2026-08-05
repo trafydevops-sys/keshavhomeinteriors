@@ -32,7 +32,7 @@ export default function WhyChooseUs() {
         <div className="grid gap-16 md:grid-cols-12">
           <div className="md:col-span-5">
             <Reveal>
-              <p className="text-xs tracking-[0.25em] text-ink-soft">08 — WHY KESHAV</p>
+              <p className="text-xs tracking-[0.25em] text-ink-soft">09 — WHY KESHAV</p>
             </Reveal>
             <h2 className="mt-6 font-display text-4xl leading-[1.15] text-ink md:text-5xl">
               <RevealText text="Not the cheapest quote." />

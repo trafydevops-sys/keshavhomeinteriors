@@ -79,7 +79,7 @@ export default function PortfolioGallery() {
     <section id="gallery" className="relative bg-canvas py-28 md:py-40">
       <div className="mx-auto max-w-[1600px] px-6 md:px-10">
         <Reveal>
-          <p className="text-xs tracking-[0.25em] text-ink-soft">07 — PORTFOLIO</p>
+          <p className="text-xs tracking-[0.25em] text-ink-soft">08 — PORTFOLIO</p>
         </Reveal>
         <h2 className="mt-6 max-w-2xl font-display text-4xl leading-[1.15] text-ink md:text-5xl">
           <RevealText text="Every room we've" />{" "}
