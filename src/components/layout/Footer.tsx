@@ -67,6 +67,19 @@ export default function Footer() {
           <p>© {new Date().getFullYear()} Keshav Home Interiors. All rights reserved.</p>
           <p>Design &amp; Founder — {site.founder}</p>
         </div>
+
+        <p className="mt-4 text-center text-[11px] text-cream/30">
+          Built by{" "}
+          <a
+            href="https://wa.me/916374597047"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-cursor-hover
+            className="hover:text-cream/60"
+          >
+            Aarupadaiyar KJ
+          </a>
+        </p>
       </div>
     </footer>
   );
