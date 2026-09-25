@@ -97,7 +97,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto w-full max-w-[1600px] px-6 pb-16 pt-40 md:px-10 md:pb-20">
         <p className="text-[0.72rem] tracking-[0.3em] text-cream/70">
-          AWARD-WINNING INTERIOR DESIGN &nbsp;·&nbsp; {site.city.toUpperCase()}
+          AWARD-WINNING INTERIOR DESIGN
         </p>
 
         <h1 className="mt-6 max-w-4xl font-display text-[2.6rem] leading-[1.05] text-cream sm:text-6xl md:text-7xl">

@@ -54,23 +54,13 @@ export default function Header() {
           className="relative block h-12 w-[73px] shrink-0 md:h-14 md:w-[85px]"
         >
           <Image
-            src="/brand/logo-stacked-light.png"
-            alt={site.name}
-            fill
-            priority
-            sizes="85px"
-            className={`object-contain object-left transition-opacity duration-500 ${
-              solid ? "opacity-0" : "opacity-100"
-            }`}
-          />
-          <Image
             src="/brand/logo-stacked.png"
             alt={site.name}
             fill
             priority
             sizes="85px"
-            className={`object-contain object-left transition-opacity duration-500 ${
-              solid ? "opacity-100" : "opacity-0"
+            className={`object-contain object-left transition-[filter] duration-500 ${
+              solid ? "" : "drop-shadow-[0_1px_10px_rgba(0,0,0,0.35)]"
             }`}
           />
         </a>
