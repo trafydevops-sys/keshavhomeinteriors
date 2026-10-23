@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { site } from "@/lib/site";
 
 export default function Footer() {
@@ -65,7 +66,15 @@ export default function Footer() {
 
         <div className="mt-20 flex flex-col-reverse items-start justify-between gap-4 border-t border-cream/10 pt-8 text-xs text-cream/40 md:flex-row md:items-center">
           <p>© {new Date().getFullYear()} Keshav Home Interiors. All rights reserved.</p>
-          <p>Design &amp; Founder — {site.founder}</p>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <Link href="/privacy-policy" className="hover:text-cream">
+              Privacy Policy
+            </Link>
+            <Link href="/terms-and-conditions" className="hover:text-cream">
+              Terms &amp; Conditions
+            </Link>
+            <p>Design &amp; Founder — {site.founder}</p>
+          </div>
         </div>
 
         <p className="mt-4 text-center text-[11px] text-cream/30">

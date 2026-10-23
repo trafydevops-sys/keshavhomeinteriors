@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import { site } from "@/lib/site";
 import { onLenisScroll } from "@/lib/lenis";
@@ -18,6 +19,7 @@ const LINKS = [
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const onNativeScroll = () => setScrolled(window.scrollY > 24);
@@ -39,7 +41,10 @@ export default function Header() {
   // mobile panel opens) and switches to a solid light bar — every piece of
   // text/iconography below has to swap with it or it disappears against
   // whichever background is behind it.
-  const solid = scrolled || open;
+  // Hash links must point back to the home page when used from other routes.
+  const base = pathname === "/" ? "" : "/";
+  const hasHero = pathname === "/" || pathname.startsWith("/projects/");
+  const solid = scrolled || open || !hasHero;
 
   return (
     <header
@@ -49,7 +54,7 @@ export default function Header() {
     >
       <div className="mx-auto flex max-w-[1600px] items-center justify-between px-6 py-4 md:px-10">
         <a
-          href="#top"
+          href={`${base}#top`}
           data-cursor-hover
           className="relative block h-12 w-[73px] shrink-0 md:h-14 md:w-[85px]"
         >
@@ -69,7 +74,7 @@ export default function Header() {
           {LINKS.map((link) => (
             <a
               key={link.href}
-              href={link.href}
+              href={`${base}${link.href}`}
               data-cursor-hover
               className={`text-[0.82rem] font-medium tracking-[0.08em] transition-colors ${
                 solid
@@ -130,7 +135,7 @@ export default function Header() {
               {LINKS.map((link, i) => (
                 <motion.a
                   key={link.href}
-                  href={link.href}
+                  href={`${base}${link.href}`}
                   onClick={() => setOpen(false)}
                   initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
